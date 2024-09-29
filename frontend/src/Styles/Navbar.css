@@ -1,0 +1,64 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #282c34;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Navigation links container */
+  .navLinks {
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+  }
+  
+  /* Individual link styles */
+  .link a {
+    color: #61dafb;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for links */
+  .link a:hover {
+    color: #fff;
+  }
+  
+  /* Button styles for Logout and Add Product */
+  .button {
+    padding: 0.5rem 1.2rem;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  .button:hover {
+    background-color: #4ec1f2;
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navLinks {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+  
